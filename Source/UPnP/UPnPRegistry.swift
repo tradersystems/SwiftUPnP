@@ -446,7 +446,7 @@ public class UPnPRegistry {
                                                    serviceId: deviceService.serviceId,
                                                    eventPublisher: eventPublisher,
                                                    eventCallbackUrl: eventCallbackUrl)
-            case "urn:linn-co-uk:service:Product:4":
+            case "urn:av-openhome-org:service:Product:4":
                 return linncoukProduct4Service(device: device,
                                             controlUrl: URL(string: deviceService.controlURL, relativeTo: baseURL)!,
                                             scpdUrl: URL(string: deviceService.SCPDURL, relativeTo: baseURL)!,

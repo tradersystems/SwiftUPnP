@@ -270,7 +270,7 @@ extension UPnPDevice {
     }
     
     public var linncoukProduct4Service: linncoukProduct4Service? {
-        services.first(where: { $0.serviceType == "urn:linn-co-uk:service:Product:4" }) as? linncoukProduct4Service
+        services.first(where: { $0.serviceType == "urn:av-openhome-org:service:Product:4" }) as? linncoukProduct4Service
     }
     public var linncoukUpdate3Service: linncoukUpdate3Service? {
         services.first(where: { $0.serviceType == "urn:linn-co-uk:service:Update:3" }) as? linncoukUpdate3Service
