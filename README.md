@@ -172,6 +172,19 @@ A full implementation of standard OpenHome services and state changes:
 - OpenHomeTransport
 - OpenHomeVolume(1 or 2)
 
+Added Linn Services as follows:
+- linn-co-uk:Cloud:2
+- linn-co-uk:Config:2
+- linn-co-uk:Configuration:1
+- linn-co-uk:Diagnostics:1
+- linn-co-uk:Exakt:5
+- linn-co-uk:Exakt2:4
+- linn-co-uk:ExaktInputs:1
+- linn-co-uk:Info:1
+- linn-co-uk:Product:4
+- linn-co-uk:Update:3
+- linn-co-uk:Volkano:1
+
 ## How to include in a project
 The package can be included using Swift Package Manager.
 
