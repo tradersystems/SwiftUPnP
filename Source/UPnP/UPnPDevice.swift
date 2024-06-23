@@ -242,4 +242,40 @@ extension UPnPDevice {
     public var openHomeOAuth1Service: OpenHomeOAuth1Service? {
         services.first(where: { $0.serviceType == "urn:av-openhome-org:service:OAuth:1" }) as? OpenHomeOAuth1Service
     }
+    
+    public var linncoukCloud2Service: linncoukCloud2Service? {
+        services.first(where: { $0.serviceType == "urn:linn-co-uk:service:Cloud:2" }) as? linncoukCloud2Service
+    }
+    public var linncoukConfig2Service: linncoukConfig2Service? {
+        services.first(where: { $0.serviceType == "urn:linn-co-uk:service:Config:2" }) as? linncoukConfig2Service
+    }
+    public var linncoukConfiguration1Service: linncoukConfiguration1Service? {
+        services.first(where: { $0.serviceType == "urn:linn-co-uk:service:Configuration:1" }) as? linncoukConfiguration1Service
+    }
+    public var linncoukDiagnostics1Service: linncoukDiagnostics1Service? {
+        services.first(where: { $0.serviceType == "urn:linn-co-uk:service:Diagnostics:1" }) as? linncoukDiagnostics1Service
+    }
+    
+    public var linncoukExakt5Service: linncoukExakt5Service? {
+        services.first(where: { $0.serviceType == "urn:linn-co-uk:service:Exakt:5" }) as? linncoukExakt5Service
+    }
+    public var linncoukExakt2_4Service: linncoukExakt2_4Service? {
+        services.first(where: { $0.serviceType == "urn:linn-co-uk:service:Exakt2:4" }) as? linncoukExakt2_4Service
+    }
+    public var linncoukExaktInputs1Service: linncoukExaktInputs1Service? {
+        services.first(where: { $0.serviceType == "urn:linn-co-uk:service:ExaktInputs:1" }) as? linncoukExaktInputs1Service
+    }
+    public var linncoukInfo1Service: linncoukInfo1Service? {
+        services.first(where: { $0.serviceType == "urn:linn-co-uk:service:ExaktInfo:1" }) as? linncoukInfo1Service
+    }
+    
+    public var linncoukProduct4Service: linncoukProduct4Service? {
+        services.first(where: { $0.serviceType == "urn:linn-co-uk:service:Product:4" }) as? linncoukProduct4Service
+    }
+    public var linncoukUpdate3Service: linncoukUpdate3Service? {
+        services.first(where: { $0.serviceType == "urn:linn-co-uk:service:Update:3" }) as? linncoukUpdate3Service
+    }
+    public var linncoukVolkano1Service: linncoukVolkano1Service? {
+        services.first(where: { $0.serviceType == "urn:linn-co-uk:service:Volkano:1" }) as? linncoukVolkano1Service
+    }
 }
