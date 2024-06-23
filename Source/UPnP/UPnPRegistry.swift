@@ -372,6 +372,107 @@ public class UPnPRegistry {
                                             serviceId: deviceService.serviceId,
                                             eventPublisher: eventPublisher,
                                             eventCallbackUrl: eventCallbackUrl)
+        case "urn:linn-co-uk:service:Cloud:2":
+                return linncoukCloud2Service(device: device,
+                                            controlUrl: URL(string: deviceService.controlURL, relativeTo: baseURL)!,
+                                            scpdUrl: URL(string: deviceService.SCPDURL, relativeTo: baseURL)!,
+                                            eventUrl: URL(string: deviceService.eventSubURL, relativeTo: baseURL),
+                                            serviceType: deviceService.serviceType,
+                                            serviceId: deviceService.serviceId,
+                                            eventPublisher: eventPublisher,
+                                            eventCallbackUrl: eventCallbackUrl)
+            case "urn:linn-co-uk:service:Config:2":
+                return linncoukConfig2Service(device: device,
+                                      controlUrl: URL(string: deviceService.controlURL, relativeTo: baseURL)!,
+                                      scpdUrl: URL(string: deviceService.SCPDURL, relativeTo: baseURL)!,
+                                      eventUrl: URL(string: deviceService.eventSubURL, relativeTo: baseURL),
+                                      serviceType: deviceService.serviceType,
+                                      serviceId: deviceService.serviceId,
+                                      eventPublisher: eventPublisher,
+                                      eventCallbackUrl: eventCallbackUrl)
+            case "urn:linn-co-uk:service:Configuration:1":
+                return linncoukConfiguration1Service(device: device,
+                                              controlUrl: URL(string: deviceService.controlURL, relativeTo: baseURL)!,
+                                              scpdUrl: URL(string: deviceService.SCPDURL, relativeTo: baseURL)!,
+                                              eventUrl: URL(string: deviceService.eventSubURL, relativeTo: baseURL),
+                                              serviceType: deviceService.serviceType,
+                                              serviceId: deviceService.serviceId,
+                                              eventPublisher: eventPublisher,
+                                              eventCallbackUrl: eventCallbackUrl)
+            case "urn:linn-co-uk:service:Diagnostics:1":
+            return linncoukDiagnostics1Service(device: device,
+                                            controlUrl: URL(string: deviceService.controlURL, relativeTo: baseURL)!,
+                                            scpdUrl: URL(string: deviceService.SCPDURL, relativeTo: baseURL)!,
+                                            eventUrl: URL(string: deviceService.eventSubURL, relativeTo: baseURL),
+                                            serviceType: deviceService.serviceType,
+                                            serviceId: deviceService.serviceId,
+                                            eventPublisher: eventPublisher,
+                                            eventCallbackUrl: eventCallbackUrl)
+                
+            case "urn:linn-co-uk:service:Exakt:5":
+                return linncoukExakt5Service(device: device,
+                                                   controlUrl: URL(string: deviceService.controlURL, relativeTo: baseURL)!,
+                                                   scpdUrl: URL(string: deviceService.SCPDURL, relativeTo: baseURL)!,
+                                                   eventUrl: URL(string: deviceService.eventSubURL, relativeTo: baseURL),
+                                                   serviceType: deviceService.serviceType,
+                                                   serviceId: deviceService.serviceId,
+                                                   eventPublisher: eventPublisher,
+                                                   eventCallbackUrl: eventCallbackUrl)
+            case "urn:linn-co-uk:service:Exakt2:4":
+                return linncoukExakt2_4Service(device: device,
+                                             controlUrl: URL(string: deviceService.controlURL, relativeTo: baseURL)!,
+                                             scpdUrl: URL(string: deviceService.SCPDURL, relativeTo: baseURL)!,
+                                             eventUrl: URL(string: deviceService.eventSubURL, relativeTo: baseURL),
+                                             serviceType: deviceService.serviceType,
+                                             serviceId: deviceService.serviceId,
+                                             eventPublisher: eventPublisher,
+                                             eventCallbackUrl: eventCallbackUrl)
+            case "urn:linn-co-uk:service:ExaktInputs:1":
+                return linncoukExaktInputs1Service(device: device,
+                                               controlUrl: URL(string: deviceService.controlURL, relativeTo: baseURL)!,
+                                               scpdUrl: URL(string: deviceService.SCPDURL, relativeTo: baseURL)!,
+                                               eventUrl: URL(string: deviceService.eventSubURL, relativeTo: baseURL),
+                                               serviceType: deviceService.serviceType,
+                                               serviceId: deviceService.serviceId,
+                                               eventPublisher: eventPublisher,
+                                               eventCallbackUrl: eventCallbackUrl)
+                
+            case "urn:linn-co-uk:service:Info:1":
+                return linncoukInfo1Service(device: device,
+                                                   controlUrl: URL(string: deviceService.controlURL, relativeTo: baseURL)!,
+                                                   scpdUrl: URL(string: deviceService.SCPDURL, relativeTo: baseURL)!,
+                                                   eventUrl: URL(string: deviceService.eventSubURL, relativeTo: baseURL),
+                                                   serviceType: deviceService.serviceType,
+                                                   serviceId: deviceService.serviceId,
+                                                   eventPublisher: eventPublisher,
+                                                   eventCallbackUrl: eventCallbackUrl)
+            case "urn:linn-co-uk:service:Product:4":
+                return linncoukProduct4Service(device: device,
+                                            controlUrl: URL(string: deviceService.controlURL, relativeTo: baseURL)!,
+                                            scpdUrl: URL(string: deviceService.SCPDURL, relativeTo: baseURL)!,
+                                            eventUrl: URL(string: deviceService.eventSubURL, relativeTo: baseURL),
+                                            serviceType: deviceService.serviceType,
+                                            serviceId: deviceService.serviceId,
+                                            eventPublisher: eventPublisher,
+                                            eventCallbackUrl: eventCallbackUrl)
+            case "urn:linn-co-uk:service:Update:3":
+                return linncoukUpdate3Service(device: device,
+                                               controlUrl: URL(string: deviceService.controlURL, relativeTo: baseURL)!,
+                                               scpdUrl: URL(string: deviceService.SCPDURL, relativeTo: baseURL)!,
+                                               eventUrl: URL(string: deviceService.eventSubURL, relativeTo: baseURL),
+                                               serviceType: deviceService.serviceType,
+                                               serviceId: deviceService.serviceId,
+                                               eventPublisher: eventPublisher,
+                                               eventCallbackUrl: eventCallbackUrl)
+            case "urn:linn-co-uk:service:Volkano:1":
+                return linncoukVolkano1Service(device: device,
+                                              controlUrl: URL(string: deviceService.controlURL, relativeTo: baseURL)!,
+                                              scpdUrl: URL(string: deviceService.SCPDURL, relativeTo: baseURL)!,
+                                              eventUrl: URL(string: deviceService.eventSubURL, relativeTo: baseURL),
+                                              serviceType: deviceService.serviceType,
+                                              serviceId: deviceService.serviceId,
+                                              eventPublisher: eventPublisher,
+                                              eventCallbackUrl: eventCallbackUrl)
         default:
             return UPnPService(device: device,
                                controlUrl: URL(string: deviceService.controlURL, relativeTo: baseURL)!,
