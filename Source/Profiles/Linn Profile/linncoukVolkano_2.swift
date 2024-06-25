@@ -611,7 +611,7 @@ public class linncoukVolkano2Service: UPnPService {
 }
 
 // Event parser
-extension linncoukVolkano_2 {
+extension linncoukVolkano2Service {
 	public struct State: Codable {
 		enum CodingKeys: String, CodingKey {
 			case deviceInfo = "DeviceInfo"
