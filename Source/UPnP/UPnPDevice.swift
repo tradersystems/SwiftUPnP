@@ -278,4 +278,9 @@ extension UPnPDevice {
     public var linncoukVolkano1Service: linncoukVolkano1Service? {
         services.first(where: { $0.serviceType == "urn:linn-co-uk:service:Volkano:1" }) as? linncoukVolkano1Service
     }
+    
+    public var linncoukVolkano2Service: linncoukVolkano2Service? {
+        services.first(where: { $0.serviceType == "urn:linn-co-uk:service:Volkano:2" }) as? linncoukVolkano2Service
+    }
+    
 }

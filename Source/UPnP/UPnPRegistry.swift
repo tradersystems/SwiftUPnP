@@ -473,6 +473,17 @@ public class UPnPRegistry {
                                               serviceId: deviceService.serviceId,
                                               eventPublisher: eventPublisher,
                                               eventCallbackUrl: eventCallbackUrl)
+            
+            case "urn:linn-co-uk:service:Volkano:2":
+                return linncoukVolkano2Service(device: device,
+                                               controlUrl: URL(string: deviceService.controlURL, relativeTo: baseURL)!,
+                                               scpdUrl: URL(string: deviceService.SCPDURL, relativeTo: baseURL)!,
+                                               eventUrl: URL(string: deviceService.eventSubURL, relativeTo: baseURL),
+                                               serviceType: deviceService.serviceType,
+                                               serviceId: deviceService.serviceId,
+                                               eventPublisher: eventPublisher,
+                                               eventCallbackUrl: eventCallbackUrl)
+             
         default:
             return UPnPService(device: device,
                                controlUrl: URL(string: deviceService.controlURL, relativeTo: baseURL)!,
