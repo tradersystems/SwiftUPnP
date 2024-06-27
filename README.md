@@ -184,6 +184,7 @@ Added Linn Services as follows:
 - linn-co-uk:Product:4
 - linn-co-uk:Update:3
 - linn-co-uk:Volkano:1
+- linn-co-uk:Volkano:2
 
 ## How to include in a project
 The package can be included using Swift Package Manager.
