@@ -230,6 +230,9 @@ extension UPnPDevice {
     public var openHomeVolume2Service: OpenHomeVolume2Service? {
         services.first(where: { $0.serviceType == "urn:av-openhome-org:service:Volume:2" }) as? OpenHomeVolume2Service
     }
+    public var openHomeVolume4Service: OpenHomeVolume4Service? {
+        services.first(where: { $0.serviceType == "urn:av-openhome-org:service:Volume:4" }) as? OpenHomeVolume4Service
+    }
     
     public var openHomeSender1Service: OpenHomeSender1Service? {
         services.first(where: { $0.serviceType == "urn:av-openhome-org:service:Sender:1" }) as? OpenHomeSender1Service

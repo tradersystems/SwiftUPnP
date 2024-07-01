@@ -309,6 +309,15 @@ public class UPnPRegistry {
                                           serviceId: deviceService.serviceId,
                                           eventPublisher: eventPublisher,
                                           eventCallbackUrl: eventCallbackUrl)
+            case "urn:av-openhome-org:service:Volume:4":
+                return OpenHomeVolume4Service(device: device,
+                                              controlUrl: URL(string: deviceService.controlURL, relativeTo: baseURL)!,
+                                              scpdUrl: URL(string: deviceService.SCPDURL, relativeTo: baseURL)!,
+                                              eventUrl: URL(string: deviceService.eventSubURL, relativeTo: baseURL),
+                                              serviceType: deviceService.serviceType,
+                                              serviceId: deviceService.serviceId,
+                                              eventPublisher: eventPublisher,
+                                              eventCallbackUrl: eventCallbackUrl)
         case "urn:av-openhome-org:service:Config:1":
             return OpenHomeConfig1Service(device: device,
                                           controlUrl: URL(string: deviceService.controlURL, relativeTo: baseURL)!,
